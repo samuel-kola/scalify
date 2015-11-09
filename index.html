@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <meta charset="UTF-8">
     <title>Scalify by samuel-kola</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Scalify</h1>
+      <h2 class="project-tagline">Dynamic Scale Creation</h2>
+      <a href="https://github.com/samuel-kola/scalify" class="btn">View on GitHub</a>
+      <a href="https://github.com/samuel-kola/scalify/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/samuel-kola/scalify/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <header>
-      <div class="container">
-        <h1>Scalify</h1>
-        <h2>Dynamic Scale Creation</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/samuel-kola/scalify/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/samuel-kola/scalify/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/samuel-kola/scalify" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h3>
+    <section class="main-content">
+      <h3>
 <a id="welcome-to-scalify" class="anchor" href="#welcome-to-scalify" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Scalify</h3>
 
 <p>It is very easy to create a dynamic scale. You just need to add the scalify script file and chain an element on the page that will load the scale and voila you have your very own dynamic scale. You can customize it to match your needs as well.</p>
@@ -38,16 +29,12 @@
 
 <ol>
 <li><p>Download scalify.js and scalify.css</p></li>
-<li>
-<p>Add links to jquery (&gt;=1.4), scalify.js and scalify.css to the page </p>
-
-<p><code>&lt;script type="text/javascript" src="jquery-1.7.1.js"&gt;&lt;/script&gt;</code></p>
-
-<p><code>&lt;script type="text/javascript" src="scalify.js"&gt;&lt;/script&gt;</code></p>
-
-<p><code>&lt;link type="text/css" href="scalify.css" rel="stylesheet" /&gt;</code></p>
-</li>
+<li><p>Add links to jquery (&gt;=1.4), scalify.js and scalify.css to the page </p></li>
 </ol>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery-1.7.1.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>scalify.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>scalify.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> /&gt;</pre></div>
 
 <h3>
 <a id="check-in" class="anchor" href="#check-in" aria-hidden="true"><span class="octicon octicon-link"></span></a>Check-in</h3>
@@ -133,43 +120,43 @@ Event that is fired on scale click. This will give the currently selected value 
 <h3>
 <a id="preview" class="anchor" href="#preview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preview</h3>
 
-<p><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
-&lt;head&gt;
-    &lt;title&gt;Scalify Example&lt;/title&gt;
-    &lt;script type="text/javascript" src="jquery-1.7.1.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="scalify.js"&gt;&lt;/script&gt;
-    &lt;link type="text/css" href="scalify.css" rel="stylesheet" /&gt;
-    &lt;script type="text/javascript"&gt;
-        $(function () {
-            $("#divScale").scalify({
-                // padding between counters
-                padding: 4,
-                // start counter
-                startCount: 0,
-                // end counter
-                endCount: 100,
-                // size of the dot
-                indicatorSize: 12,
-                // interval between two minor counters
-                minorInterval: 1,
-                // interval between two major counters
-                majorInterval: 10,
-                // show/hide major interval text
-                showMajorIntervalText: true,
-                // show/hide minor interval text
-                showMinorIntervalText: false,
-                // event fired on scale click
-                onScalerClick: function () {
-                    $(".scale-data").text(this.toString());
-                }
-            });
-        });
-    &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id="divScale"&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">html</span> <span class="pl-e">xmlns</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/1999/xhtml<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">head</span>&gt;
+    &lt;<span class="pl-ent">title</span>&gt;Scalify Example&lt;/<span class="pl-ent">title</span>&gt;
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery-1.7.1.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>scalify.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>scalify.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> /&gt;
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;</span>
+<span class="pl-s1">        $(<span class="pl-k">function</span> () {</span>
+<span class="pl-s1">            $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({</span>
+<span class="pl-s1">                <span class="pl-c">// padding between counters</span></span>
+<span class="pl-s1">                padding<span class="pl-k">:</span> <span class="pl-c1">4</span>,</span>
+<span class="pl-s1">                <span class="pl-c">// start counter</span></span>
+<span class="pl-s1">                startCount<span class="pl-k">:</span> <span class="pl-c1">0</span>,</span>
+<span class="pl-s1">                <span class="pl-c">// end counter</span></span>
+<span class="pl-s1">                endCount<span class="pl-k">:</span> <span class="pl-c1">100</span>,</span>
+<span class="pl-s1">                <span class="pl-c">// size of the dot</span></span>
+<span class="pl-s1">                indicatorSize<span class="pl-k">:</span> <span class="pl-c1">12</span>,</span>
+<span class="pl-s1">                <span class="pl-c">// interval between two minor counters</span></span>
+<span class="pl-s1">                minorInterval<span class="pl-k">:</span> <span class="pl-c1">1</span>,</span>
+<span class="pl-s1">                <span class="pl-c">// interval between two major counters</span></span>
+<span class="pl-s1">                majorInterval<span class="pl-k">:</span> <span class="pl-c1">10</span>,</span>
+<span class="pl-s1">                <span class="pl-c">// show/hide major interval text</span></span>
+<span class="pl-s1">                showMajorIntervalText<span class="pl-k">:</span> <span class="pl-c1">true</span>,</span>
+<span class="pl-s1">                <span class="pl-c">// show/hide minor interval text</span></span>
+<span class="pl-s1">                showMinorIntervalText<span class="pl-k">:</span> <span class="pl-c1">false</span>,</span>
+<span class="pl-s1">                <span class="pl-c">// event fired on scale click</span></span>
+<span class="pl-s1">                <span class="pl-en">onScalerClick</span><span class="pl-k">:</span> <span class="pl-k">function</span> () {</span>
+<span class="pl-s1">                    $(<span class="pl-s"><span class="pl-pds">"</span>.scale-data<span class="pl-pds">"</span></span>).<span class="pl-c1">text</span>(<span class="pl-v">this</span>.<span class="pl-c1">toString</span>());</span>
+<span class="pl-s1">                }</span>
+<span class="pl-s1">            });</span>
+<span class="pl-s1">        });</span>
+<span class="pl-s1">    &lt;/<span class="pl-ent">script</span>&gt;</span>
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>divScale<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
@@ -180,9 +167,15 @@ Event that is fired on scale click. This will give the currently selected value 
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with Scalify? Check out <a href="https://github.com/samuel-kola/scalify">documentation</a>.</p>
-      </section>
-    </div>
 
-    
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/samuel-kola/scalify">Scalify</a> is maintained by <a href="https://github.com/samuel-kola">samuel-kola</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
   </body>
 </html>
