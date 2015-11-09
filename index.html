@@ -156,8 +156,16 @@ Show/hide minor interval text<br>
 
 <p><em>onScalerClick</em><br>
 Event that is fired on scale click. This will give the currently selected value on the scale.<br>
-<code>Type</code> - <b>event</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ onScalerClick: function () { alert(this); } }); }</code></p>
+<code>Type</code>  - <b><code>event</code></b><br>
+<code>Usage</code> -  </p>
+
+<div class="highlight highlight-source-js"><pre>$(<span class="pl-k">function</span> () { 
+     $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ 
+          <span class="pl-en">onScalerClick</span><span class="pl-k">:</span> <span class="pl-k">function</span> () { 
+               <span class="pl-c1">alert</span>(<span class="pl-v">this</span>); 
+          } 
+     }); 
+}</pre></div>
 
 <h3>
 <a id="own-it" class="anchor" href="#own-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Own-It</h3>
