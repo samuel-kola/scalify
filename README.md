@@ -146,9 +146,9 @@ You can update any of the above settings to customize it to your needs
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Scalify Example</title>
-	<script type="text/javascript" src="jquery-1.7.1.js"></script>
-    <script type="text/javascript" src="scalify.js"></script>
-    <link type="text/css" href="scalify.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://goo.gl/j4fRk4"></script>
+    <link type="text/css" href="https://goo.gl/gOYAxc" rel="stylesheet" />
 	<script type="text/javascript">
         $(function () {
             $("#divScale").scalify({
@@ -170,7 +170,7 @@ You can update any of the above settings to customize it to your needs
                 showMinorIntervalText: false,
                 // event fired on scale click
                 onScalerClick: function () {
-                    $(".scale-data").text(this.toString());
+                    $("#spnScaleData").text(this.toString());
                 }
             });
         });
@@ -178,6 +178,7 @@ You can update any of the above settings to customize it to your needs
 </head>
 <body>
     <div id="divScale"></div>
+    <span id="spnScaleData" />
 </body>
 </html>
 ```
