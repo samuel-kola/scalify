@@ -1,2 +1,2 @@
 # scalify
-Dynamic Scale Creation
+This allows for creation of a Dynamic Scale
