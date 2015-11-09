@@ -84,38 +84,68 @@ Starting counter<br>
 <p><em>endCount</em><br>
 Ending counter<br>
 <code>Type</code> - <b>number</b><br>
-<code>Default</code> - <b>100</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ endCount: 0 }); }</code></p>
+<code>Default</code> - <b>100</b><br></p>
+
+<div class="highlight highlight-source-js"><pre>$(<span class="pl-k">function</span> () { 
+     $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ 
+          endCount<span class="pl-k">:</span> <span class="pl-c1">100</span>
+     }); 
+}</pre></div>
 
 <p><em>indicatorSize</em><br>
 Size of the indicator dot<br>
 <code>Type</code> - <b>number</b><br>
-<code>Default</code> - <b>12</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ indicatorSize: 12 }); }</code></p>
+<code>Default</code> - <b>12</b><br></p>
+
+<div class="highlight highlight-source-js"><pre>$(<span class="pl-k">function</span> () { 
+     $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ 
+          indicatorSize<span class="pl-k">:</span> <span class="pl-c1">12</span>
+     }); 
+}</pre></div>
 
 <p><em>minorInterval</em><br>
 Interval between two minor counters<br>
 <code>Type</code> - <b>number</b><br>
-<code>Default</code> - <b>1</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ minorInterval: 1 }); }</code></p>
+<code>Default</code> - <b>1</b><br></p>
+
+<div class="highlight highlight-source-js"><pre>$(<span class="pl-k">function</span> () { 
+     $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ 
+          minorInterval<span class="pl-k">:</span> <span class="pl-c1">1</span>
+     }); 
+}</pre></div>
 
 <p><em>majorInterval</em><br>
 Interval between two major counters<br>
 <code>Type</code> - <b>number</b><br>
-<code>Default</code> - <b>10</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ majorInterval: 10 }); }</code></p>
+<code>Default</code> - <b>10</b><br></p>
+
+<div class="highlight highlight-source-js"><pre>$(<span class="pl-k">function</span> () { 
+     $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ 
+          majorInterval<span class="pl-k">:</span> <span class="pl-c1">10</span>
+     }); 
+}</pre></div>
 
 <p><em>showMajorIntervalText</em><br>
 Show/hide major interval text<br>
-<code>Type</code> - <b>boolean</b><br>
-<code>Default</code> - <b>true</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ showMajorIntervalText: true }); }</code></p>
+<code>Type</code> - <b><code>boolean</code></b><br>
+<code>Default</code> - <b><code>true</code></b><br></p>
+
+<div class="highlight highlight-source-js"><pre>$(<span class="pl-k">function</span> () { 
+     $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ 
+          showMajorIntervalText<span class="pl-k">:</span> <span class="pl-c1">true</span>
+     }); 
+}</pre></div>
 
 <p><em>showMinorIntervalText</em><br>
 Show/hide minor interval text<br>
-<code>Type</code> - <b>boolean</b><br>
-<code>Default</code> - <b>false</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ showMinorIntervalText: false }); }</code></p>
+<code>Type</code> - <b><code>boolean</code></b><br>
+<code>Default</code> - <b><code>false</code></b><br></p>
+
+<div class="highlight highlight-source-js"><pre>$(<span class="pl-k">function</span> () { 
+     $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ 
+          showMinorIntervalText<span class="pl-k">:</span> <span class="pl-c1">false</span>
+     }); 
+}</pre></div>
 
 <p><em>onScalerClick</em><br>
 Event that is fired on scale click. This will give the currently selected value on the scale.<br>
