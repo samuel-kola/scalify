@@ -62,100 +62,104 @@
 Padding between counters<br>
 <code>Type</code> - <b>Number</b><br>
 <code>Default</code> - <b>4</b> (in pixels) <br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ padding: 4 }); }</code><br><br></p>
+<code>Usage</code> -  </p>
 
-<p><em>startCount</em><br>
-Starting counter<br>
-<code>Type</code> - <b>Number</b><br>
-<code>Default</code> - <b>0</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ startCount: 0 }); }</code></p>
-
-<p><em>endCount</em><br>
-Ending counter<br>
-<code>Type</code> - <b>number</b><br>
-<code>Default</code> - <b>100</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ endCount: 0 }); }</code></p>
-
-<p><em>indicatorSize</em><br>
-Size of the indicator dot<br>
-<code>Type</code> - <b>number</b><br>
-<code>Default</code> - <b>12</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ indicatorSize: 12 }); }</code></p>
-
-<p><em>minorInterval</em><br>
-Interval between two minor counters<br>
-<code>Type</code> - <b>number</b><br>
-<code>Default</code> - <b>1</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ minorInterval: 1 }); }</code></p>
-
-<p><em>majorInterval</em><br>
-Interval between two major counters<br>
-<code>Type</code> - <b>number</b><br>
-<code>Default</code> - <b>10</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ majorInterval: 10 }); }</code></p>
-
-<p><em>showMajorIntervalText</em><br>
-Show/hide major interval text<br>
-<code>Type</code> - <b>boolean</b><br>
-<code>Default</code> - <b>true</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ showMajorIntervalText: true }); }</code></p>
-
-<p><em>showMinorIntervalText</em><br>
-Show/hide minor interval text<br>
-<code>Type</code> - <b>boolean</b><br>
-<code>Default</code> - <b>false</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ showMinorIntervalText: false }); }</code></p>
-
-<p><em>onScalerClick</em><br>
-Event that is fired on scale click. This will give the currently selected value on the scale.<br>
-<code>Type</code> - <b>event</b><br>
-<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ onScalerClick: function () { alert(this); } }); }</code></p>
-
-<h3>
-<a id="own-it" class="anchor" href="#own-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Own-It</h3>
-
-<p>You can update any of the above settings to customize it to your needs</p>
-
-<h3>
-<a id="preview" class="anchor" href="#preview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preview</h3>
-
-<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">html</span> <span class="pl-e">xmlns</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/1999/xhtml<span class="pl-pds">"</span></span>&gt;
-&lt;<span class="pl-ent">head</span>&gt;
-    &lt;<span class="pl-ent">title</span>&gt;Scalify Example&lt;/<span class="pl-ent">title</span>&gt;
-<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery-1.7.1.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
-<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>scalify.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
-    &lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>scalify.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> /&gt;
-<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;</span>
-<span class="pl-s1">        $(<span class="pl-k">function</span> () {</span>
-<span class="pl-s1">            $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({</span>
-<span class="pl-s1">                <span class="pl-c">// padding between counters</span></span>
-<span class="pl-s1">                padding<span class="pl-k">:</span> <span class="pl-c1">4</span>,</span>
-<span class="pl-s1">                <span class="pl-c">// start counter</span></span>
-<span class="pl-s1">                startCount<span class="pl-k">:</span> <span class="pl-c1">0</span>,</span>
-<span class="pl-s1">                <span class="pl-c">// end counter</span></span>
-<span class="pl-s1">                endCount<span class="pl-k">:</span> <span class="pl-c1">100</span>,</span>
-<span class="pl-s1">                <span class="pl-c">// size of the dot</span></span>
-<span class="pl-s1">                indicatorSize<span class="pl-k">:</span> <span class="pl-c1">12</span>,</span>
-<span class="pl-s1">                <span class="pl-c">// interval between two minor counters</span></span>
-<span class="pl-s1">                minorInterval<span class="pl-k">:</span> <span class="pl-c1">1</span>,</span>
-<span class="pl-s1">                <span class="pl-c">// interval between two major counters</span></span>
-<span class="pl-s1">                majorInterval<span class="pl-k">:</span> <span class="pl-c1">10</span>,</span>
-<span class="pl-s1">                <span class="pl-c">// show/hide major interval text</span></span>
-<span class="pl-s1">                showMajorIntervalText<span class="pl-k">:</span> <span class="pl-c1">true</span>,</span>
-<span class="pl-s1">                <span class="pl-c">// show/hide minor interval text</span></span>
-<span class="pl-s1">                showMinorIntervalText<span class="pl-k">:</span> <span class="pl-c1">false</span>,</span>
-<span class="pl-s1">                <span class="pl-c">// event fired on scale click</span></span>
-<span class="pl-s1">                <span class="pl-en">onScalerClick</span><span class="pl-k">:</span> <span class="pl-k">function</span> () {</span>
-<span class="pl-s1">                    $(<span class="pl-s"><span class="pl-pds">"</span>.scale-data<span class="pl-pds">"</span></span>).<span class="pl-c1">text</span>(<span class="pl-v">this</span>.<span class="pl-c1">toString</span>());</span>
-<span class="pl-s1">                }</span>
-<span class="pl-s1">            });</span>
-<span class="pl-s1">        });</span>
-<span class="pl-s1">    &lt;/<span class="pl-ent">script</span>&gt;</span>
-&lt;/<span class="pl-ent">head</span>&gt;
-&lt;<span class="pl-ent">body</span>&gt;
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>divScale<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
-&lt;/<span class="pl-ent">body</span>&gt;
-&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+<div class="highlight highlight-source-js"><pre>$(<span class="pl-k">function</span> () { 
+     $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ 
+          padding<span class="pl-k">:</span> <span class="pl-c1">4</span> 
+     }); 
+}
+<span class="pl-s"><span class="pl-pds">`</span><span class="pl-pds">`</span><span class="pl-pds">`</span>&lt;br/&gt;&lt;br/&gt;</span>
+<span class="pl-s"></span>
+<span class="pl-s">_startCount_&lt;br/&gt;</span>
+<span class="pl-s">Starting counter&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Type<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;Number&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Default<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;0&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Usage<span class="pl-s"><span class="pl-pds">`</span> -  <span class="pl-pds">`</span></span>$(<span class="pl-k">function</span> () { $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ startCount<span class="pl-k">:</span> <span class="pl-c1">0</span> }); }<span class="pl-s"><span class="pl-pds">`</span></span>
+<span class="pl-s"></span>
+<span class="pl-s">_endCount_&lt;br/&gt;</span>
+<span class="pl-s">Ending counter&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Type<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;number&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Default<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;100&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Usage<span class="pl-s"><span class="pl-pds">`</span> -  <span class="pl-pds">`</span></span>$(<span class="pl-k">function</span> () { $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ endCount<span class="pl-k">:</span> <span class="pl-c1">0</span> }); }<span class="pl-s"><span class="pl-pds">`</span></span>
+<span class="pl-s"></span>
+<span class="pl-s">_indicatorSize_&lt;br/&gt;</span>
+<span class="pl-s">Size of the indicator dot&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Type<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;number&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Default<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;12&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Usage<span class="pl-s"><span class="pl-pds">`</span> -  <span class="pl-pds">`</span></span>$(<span class="pl-k">function</span> () { $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ indicatorSize<span class="pl-k">:</span> <span class="pl-c1">12</span> }); }<span class="pl-s"><span class="pl-pds">`</span></span>
+<span class="pl-s"></span>
+<span class="pl-s">_minorInterval_&lt;br/&gt;</span>
+<span class="pl-s">Interval between two minor counters&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Type<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;number&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Default<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;1&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Usage<span class="pl-s"><span class="pl-pds">`</span> -  <span class="pl-pds">`</span></span>$(<span class="pl-k">function</span> () { $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ minorInterval<span class="pl-k">:</span> <span class="pl-c1">1</span> }); }<span class="pl-s"><span class="pl-pds">`</span></span>
+<span class="pl-s"></span>
+<span class="pl-s">_majorInterval_&lt;br/&gt;</span>
+<span class="pl-s">Interval between two major counters&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Type<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;number&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Default<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;10&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Usage<span class="pl-s"><span class="pl-pds">`</span> -  <span class="pl-pds">`</span></span>$(<span class="pl-k">function</span> () { $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ majorInterval<span class="pl-k">:</span> <span class="pl-c1">10</span> }); }<span class="pl-s"><span class="pl-pds">`</span></span>
+<span class="pl-s"></span>
+<span class="pl-s">_showMajorIntervalText_&lt;br/&gt;</span>
+<span class="pl-s">Show/hide major interval text&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Type<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;boolean&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Default<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;true&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Usage<span class="pl-s"><span class="pl-pds">`</span> -  <span class="pl-pds">`</span></span>$(<span class="pl-k">function</span> () { $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ showMajorIntervalText<span class="pl-k">:</span> <span class="pl-c1">true</span> }); }<span class="pl-s"><span class="pl-pds">`</span></span>
+<span class="pl-s"></span>
+<span class="pl-s">_showMinorIntervalText_&lt;br/&gt;</span>
+<span class="pl-s">Show/hide minor interval text&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Type<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;boolean&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Default<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;false&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Usage<span class="pl-s"><span class="pl-pds">`</span> -  <span class="pl-pds">`</span></span>$(<span class="pl-k">function</span> () { $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ showMinorIntervalText<span class="pl-k">:</span> <span class="pl-c1">false</span> }); }<span class="pl-s"><span class="pl-pds">`</span></span>
+<span class="pl-s"></span>
+<span class="pl-s">_onScalerClick_&lt;br/&gt;</span>
+<span class="pl-s">Event that is fired on scale click. This will give the currently selected value on the scale.&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Type<span class="pl-s"><span class="pl-pds">`</span> - &lt;b&gt;event&lt;/b&gt;&lt;br/&gt;</span>
+<span class="pl-s"><span class="pl-pds">`</span></span>Usage<span class="pl-s"><span class="pl-pds">`</span> -  <span class="pl-pds">`</span></span>$(<span class="pl-k">function</span> () { $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({ <span class="pl-en">onScalerClick</span><span class="pl-k">:</span> <span class="pl-k">function</span> () { <span class="pl-c1">alert</span>(<span class="pl-v">this</span>); } }); }<span class="pl-s"><span class="pl-pds">`</span></span>
+<span class="pl-s"></span>
+<span class="pl-s">### Own-It</span>
+<span class="pl-s">You can update any of the above settings to customize it to your needs</span>
+<span class="pl-s"></span>
+<span class="pl-s">### Preview</span>
+<span class="pl-s"><span class="pl-pds">`</span><span class="pl-pds">`</span><span class="pl-pds">`</span></span>html
+<span class="pl-k">&lt;</span>html xmlns<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/1999/xhtml<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>head<span class="pl-k">&gt;</span>
+    <span class="pl-k">&lt;</span>title<span class="pl-k">&gt;</span>Scalify Example<span class="pl-k">&lt;/</span>title<span class="pl-k">&gt;</span>
+    <span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> src<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>jquery-1.7.1.js<span class="pl-pds">"</span></span><span class="pl-k">&gt;&lt;/</span>script<span class="pl-k">&gt;</span>
+    <span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> src<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>scalify.js<span class="pl-pds">"</span></span><span class="pl-k">&gt;&lt;/</span>script<span class="pl-k">&gt;</span>
+    <span class="pl-k">&lt;</span>link type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> href<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>scalify.css<span class="pl-pds">"</span></span> rel<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-k">/&gt;</span>
+    <span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+        $(<span class="pl-k">function</span> () {
+            $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({
+                <span class="pl-c">// padding between counters</span>
+                padding<span class="pl-k">:</span> <span class="pl-c1">4</span>,
+                <span class="pl-c">// start counter</span>
+                startCount<span class="pl-k">:</span> <span class="pl-c1">0</span>,
+                <span class="pl-c">// end counter</span>
+                endCount<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+                <span class="pl-c">// size of the dot</span>
+                indicatorSize<span class="pl-k">:</span> <span class="pl-c1">12</span>,
+                <span class="pl-c">// interval between two minor counters</span>
+                minorInterval<span class="pl-k">:</span> <span class="pl-c1">1</span>,
+                <span class="pl-c">// interval between two major counters</span>
+                majorInterval<span class="pl-k">:</span> <span class="pl-c1">10</span>,
+                <span class="pl-c">// show/hide major interval text</span>
+                showMajorIntervalText<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+                <span class="pl-c">// show/hide minor interval text</span>
+                showMinorIntervalText<span class="pl-k">:</span> <span class="pl-c1">false</span>,
+                <span class="pl-c">// event fired on scale click</span>
+                <span class="pl-en">onScalerClick</span><span class="pl-k">:</span> <span class="pl-k">function</span> () {
+                    $(<span class="pl-s"><span class="pl-pds">"</span>.scale-data<span class="pl-pds">"</span></span>).<span class="pl-c1">text</span>(<span class="pl-v">this</span>.<span class="pl-c1">toString</span>());
+                }
+            });
+        });
+    <span class="pl-k">&lt;/</span>script<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;/</span>head<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>body<span class="pl-k">&gt;</span>
+    <span class="pl-k">&lt;</span>div id<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>divScale<span class="pl-pds">"</span></span><span class="pl-k">&gt;&lt;/</span>div<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;/</span>body<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;/</span>html<span class="pl-k">&gt;</span></pre></div>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
