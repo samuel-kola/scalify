@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Scalify by samuel-kola</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Scalify</h1>
+        <h2>Dynamic Scale Creation</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/samuel-kola/scalify/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/samuel-kola/scalify/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/samuel-kola/scalify" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h3>
+<a id="welcome-to-scalify" class="anchor" href="#welcome-to-scalify" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Scalify</h3>
+
+<p>It is very easy to create a dynamic scale. You just need to add the scalify script file and chain an element on the page that will load the scale and voila you have your very own dynamic scale. You can customize it to match your needs as well.</p>
+
+<h3>
+<a id="housekeeping" class="anchor" href="#housekeeping" aria-hidden="true"><span class="octicon octicon-link"></span></a>Housekeeping</h3>
+
+<ol>
+<li><p>Download scalify.js and scalify.css</p></li>
+<li>
+<p>Add links to jquery (&gt;=1.4), scalify.js and scalify.css to the page </p>
+
+<p><code>&lt;script type="text/javascript" src="jquery-1.7.1.js"&gt;&lt;/script&gt;</code></p>
+
+<p><code>&lt;script type="text/javascript" src="scalify.js"&gt;&lt;/script&gt;</code></p>
+
+<p><code>&lt;link type="text/css" href="scalify.css" rel="stylesheet" /&gt;</code></p>
+</li>
+</ol>
+
+<h3>
+<a id="check-in" class="anchor" href="#check-in" aria-hidden="true"><span class="octicon octicon-link"></span></a>Check-in</h3>
+
+<ol>
+<li>
+<p>Once you have all your scripts in place you would need to select an element on the page to display the scale</p>
+
+<p><code>&lt;div id="divScale"&gt;&lt;/div&gt;</code></p>
+</li>
+<li>
+<p>Apply scalify to the above selected element</p>
+
+<p><code>$(function () {
+       $("#divScale").scalify();
+  }</code></p>
+</li>
+</ol>
+
+<h3>
+<a id="built-in" class="anchor" href="#built-in" aria-hidden="true"><span class="octicon octicon-link"></span></a>Built-In</h3>
+
+<p>The plugin comes with pre-built options which can be customized</p>
+
+<p><em>padding</em><br>
+Padding between counters<br>
+<code>Type</code> - <b>Number</b><br>
+<code>Default</code> - <b>4</b> (in pixels) <br>
+<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ padding: 4 }); }</code><br><br></p>
+
+<p><em>startCount</em><br>
+Starting counter<br>
+<code>Type</code> - <b>Number</b><br>
+<code>Default</code> - <b>0</b><br>
+<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ startCount: 0 }); }</code></p>
+
+<p><em>endCount</em><br>
+Ending counter<br>
+<code>Type</code> - <b>number</b><br>
+<code>Default</code> - <b>100</b><br>
+<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ endCount: 0 }); }</code></p>
+
+<p><em>indicatorSize</em><br>
+Size of the indicator dot<br>
+<code>Type</code> - <b>number</b><br>
+<code>Default</code> - <b>12</b><br>
+<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ indicatorSize: 12 }); }</code></p>
+
+<p><em>minorInterval</em><br>
+Interval between two minor counters<br>
+<code>Type</code> - <b>number</b><br>
+<code>Default</code> - <b>1</b><br>
+<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ minorInterval: 1 }); }</code></p>
+
+<p><em>majorInterval</em><br>
+Interval between two major counters<br>
+<code>Type</code> - <b>number</b><br>
+<code>Default</code> - <b>10</b><br>
+<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ majorInterval: 10 }); }</code></p>
+
+<p><em>showMajorIntervalText</em><br>
+Show/hide major interval text<br>
+<code>Type</code> - <b>boolean</b><br>
+<code>Default</code> - <b>true</b><br>
+<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ showMajorIntervalText: true }); }</code></p>
+
+<p><em>showMinorIntervalText</em><br>
+Show/hide minor interval text<br>
+<code>Type</code> - <b>boolean</b><br>
+<code>Default</code> - <b>false</b><br>
+<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ showMinorIntervalText: false }); }</code></p>
+
+<p><em>onScalerClick</em><br>
+Event that is fired on scale click. This will give the currently selected value on the scale.<br>
+<code>Type</code> - <b>event</b><br>
+<code>Usage</code> -  <code>$(function () { $("#divScale").scalify({ onScalerClick: function () { alert(this); } }); }</code></p>
+
+<h3>
+<a id="own-it" class="anchor" href="#own-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Own-It</h3>
+
+<p>You can update any of the above settings to customize it to your needs</p>
+
+<h3>
+<a id="preview" class="anchor" href="#preview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preview</h3>
+
+<p><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;title&gt;Scalify Example&lt;/title&gt;
+    &lt;script type="text/javascript" src="jquery-1.7.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scalify.js"&gt;&lt;/script&gt;
+    &lt;link type="text/css" href="scalify.css" rel="stylesheet" /&gt;
+    &lt;script type="text/javascript"&gt;
+        $(function () {
+            $("#divScale").scalify({
+                // padding between counters
+                padding: 4,
+                // start counter
+                startCount: 0,
+                // end counter
+                endCount: 100,
+                // size of the dot
+                indicatorSize: 12,
+                // interval between two minor counters
+                minorInterval: 1,
+                // interval between two major counters
+                majorInterval: 10,
+                // show/hide major interval text
+                showMajorIntervalText: true,
+                // show/hide minor interval text
+                showMinorIntervalText: false,
+                // event fired on scale click
+                onScalerClick: function () {
+                    $(".scale-data").text(this.toString());
+                }
+            });
+        });
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="divScale"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>Samuel Kola (<a href="https://github.com/samuel-kola" class="user-mention">@samuel-kola</a>)</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Scalify? Check out <a href="https://github.com/samuel-kola/scalify">documentation</a>.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
