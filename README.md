@@ -7,9 +7,9 @@ It is very easy to create a dynamic scale. You just need to add the scalify scri
 
 2. Add links to jquery (>=1.4), scalify.js and scalify.css to the page 
 ```html
-<script type="text/javascript" src="jquery-1.7.1.js"></script>
-<script type="text/javascript" src="scalify.js"></script>
-<link type="text/css" href="scalify.css" rel="stylesheet" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://goo.gl/j4fRk4"></script>
+<link type="text/css" href="https://goo.gl/gOYAxc" rel="stylesheet" />
 ```
 
 ### Check-in
