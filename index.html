@@ -183,9 +183,9 @@ Event that is fired on scale click. This will give the currently selected value 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">html</span> <span class="pl-e">xmlns</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/1999/xhtml<span class="pl-pds">"</span></span>&gt;
 &lt;<span class="pl-ent">head</span>&gt;
     &lt;<span class="pl-ent">title</span>&gt;Scalify Example&lt;/<span class="pl-ent">title</span>&gt;
-<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery-1.7.1.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
-<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>scalify.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
-    &lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>scalify.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> /&gt;
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.0/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://goo.gl/j4fRk4<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>https://goo.gl/gOYAxc<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> /&gt;
 <span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;</span>
 <span class="pl-s1">        $(<span class="pl-k">function</span> () {</span>
 <span class="pl-s1">            $(<span class="pl-s"><span class="pl-pds">"</span>#divScale<span class="pl-pds">"</span></span>).scalify({</span>
@@ -207,7 +207,7 @@ Event that is fired on scale click. This will give the currently selected value 
 <span class="pl-s1">                showMinorIntervalText<span class="pl-k">:</span> <span class="pl-c1">false</span>,</span>
 <span class="pl-s1">                <span class="pl-c">// event fired on scale click</span></span>
 <span class="pl-s1">                <span class="pl-en">onScalerClick</span><span class="pl-k">:</span> <span class="pl-k">function</span> () {</span>
-<span class="pl-s1">                    $(<span class="pl-s"><span class="pl-pds">"</span>.scale-data<span class="pl-pds">"</span></span>).<span class="pl-c1">text</span>(<span class="pl-v">this</span>.<span class="pl-c1">toString</span>());</span>
+<span class="pl-s1">                    $(<span class="pl-s"><span class="pl-pds">"</span>#spnScaleData<span class="pl-pds">"</span></span>).<span class="pl-c1">text</span>(<span class="pl-v">this</span>.<span class="pl-c1">toString</span>());</span>
 <span class="pl-s1">                }</span>
 <span class="pl-s1">            });</span>
 <span class="pl-s1">        });</span>
@@ -215,6 +215,7 @@ Event that is fired on scale click. This will give the currently selected value 
 &lt;/<span class="pl-ent">head</span>&gt;
 &lt;<span class="pl-ent">body</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>divScale<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">span</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>spnScaleData<span class="pl-pds">"</span></span>/&gt;
 &lt;/<span class="pl-ent">body</span>&gt;
 &lt;/<span class="pl-ent">html</span>&gt;</pre></div>
 
