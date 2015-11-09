@@ -1,0 +1,76 @@
+.scaler {
+    padding-left: 300px;
+    height: 450px;
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+}
+
+.scaler-container {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.indicator-big {
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    display: block;
+    text-align: center;
+    border-bottom: 2.5px solid #808080;
+    width: 20px;
+    height: 3px;
+}
+
+.indicator-small {
+    cursor: pointer;
+    position: absolute;
+    left: 34px;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    width: 10px;
+    height: 3px;
+}
+
+.indicator-text-minor {
+    left: 0px;
+    position: absolute;
+    font: bold 10px sans-serif;
+    margin-top: -10px;
+    margin-left:10px;
+}
+
+.indicator-text-major {
+    left: 0px;
+    position: absolute;
+    font: bold 15px sans-serif;
+    margin-top: -10px;
+}
+
+.circle {
+    border-radius: 50%/50%;
+    width: 12px;
+    height: 12px;
+    background: red;
+}
+
+.indicator-arrow:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 14px solid green;
+    margin: 0 10px;
+    display: inline-block;
+    margin-top: -1px;
+}
+
+.indicator-arrow-text {
+    display: inline-block;
+    float: right;
+    font-size: 10px;
+    font: bold 15px sans-serif;
+    margin-top: -6px;
+}
