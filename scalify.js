@@ -108,4 +108,4 @@
         onScalerClick: function () { }
     };
 
-}(jQuery));
+}(jQuery)); 
