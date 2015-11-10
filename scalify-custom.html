@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Scalify Example</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="https://goo.gl/j4fRk4"></script>
+    <link type="text/css" href="https://goo.gl/gOYAxc" rel="stylesheet" />
+    <script type="text/javascript">
+        $(function () {
+            $("#divScale").scalify({
+                // padding between counters
+                padding: 4,
+                // start counter
+                startCount: 0,
+                // end counter
+                endCount: 100,
+                // size of the dot
+                indicatorSize: 12,
+                // interval between two minor counters
+                minorInterval: 1,
+                // interval between two major counters
+                majorInterval: 10,
+                // show/hide major interval text
+                showMajorIntervalText: true,
+                // show/hide minor interval text
+                showMinorIntervalText: false,
+                // event fired on scale click
+                onScalerClick: function () {
+                    $("#spnScaleData").text(this.toString());
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="divScale"></div>
+    You Selected: <span id="spnScaleData" />
+</body>
+</html>
