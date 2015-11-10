@@ -5,7 +5,7 @@ It is very easy to create a dynamic scale. You just need to add the scalify scri
 ### Housekeeping
 1. Download [Scalify](https://github.com/samuel-kola/scalify/zipball/master)
 
-2. Add links to jquery (>=1.4), scalify.js and scalify.css to the page 
+2. Add links to jquery (>=1.7), scalify.js and scalify.css to the page 
 ```html
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script type="text/javascript" src="https://goo.gl/j4fRk4"></script>
