@@ -183,6 +183,9 @@ You can update any of the above settings to customize it to your needs
 </html>
 ```
 
+### Look and Feel
+![Scalify](https://goo.gl/zClfja)
+
 ### Authors and Contributors
 Samuel Kola (@samuel-kola)
 
