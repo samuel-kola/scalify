@@ -186,46 +186,6 @@ You can update any of the above settings to customize it to your needs
 ### Look and Feel
 ![Scalify](https://goo.gl/zClfja)
 
-### Test Drive
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Scalify Example</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script type="text/javascript" src="https://goo.gl/j4fRk4"></script>
-    <link type="text/css" href="https://goo.gl/gOYAxc" rel="stylesheet" />
-    <script type="text/javascript">
-        $(function () {
-            $("#divScale").scalify({
-                // padding between counters
-                padding: 4,
-                // start counter
-                startCount: 0,
-                // end counter
-                endCount: 100,
-                // size of the dot
-                indicatorSize: 12,
-                // interval between two minor counters
-                minorInterval: 1,
-                // interval between two major counters
-                majorInterval: 10,
-                // show/hide major interval text
-                showMajorIntervalText: true,
-                // show/hide minor interval text
-                showMinorIntervalText: false,
-                // event fired on scale click
-                onScalerClick: function () {
-                    $("#spnScaleData").text(this.toString());
-                }
-            });
-        });
-    </script>
-</head>
-<body>
-    <div id="divScale"></div>
-    <span id="spnScaleData" />
-</body>
-</html>
-
 ### Authors and Contributors
 Samuel Kola (@samuel-kola)
 
