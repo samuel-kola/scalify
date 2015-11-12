@@ -187,10 +187,13 @@ You can update any of the above settings to customize it to your needs
 ![Scalify](https://goo.gl/zClfja)
 
 ### Test Drive
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Scalify Example</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript" src="https://goo.gl/j4fRk4"></script>
     <link type="text/css" href="https://goo.gl/gOYAxc" rel="stylesheet" />
-	<script type="text/javascript">
+    <script type="text/javascript">
         $(function () {
             $("#divScale").scalify({
                 // padding between counters
@@ -216,8 +219,12 @@ You can update any of the above settings to customize it to your needs
             });
         });
     </script>
+</head>
+<body>
     <div id="divScale"></div>
     <span id="spnScaleData" />
+</body>
+</html>
 
 ### Authors and Contributors
 Samuel Kola (@samuel-kola)
