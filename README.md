@@ -147,8 +147,8 @@ You can update any of the above settings to customize it to your needs
 <head>
     <title>Scalify Example</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script type="text/javascript" src="https://goo.gl/j4fRk4"></script>
-    <link type="text/css" href="https://goo.gl/gOYAxc" rel="stylesheet" />
+    <script type="text/javascript" src="https://goo.gl/hYWDgQ"></script>
+    <link type="text/css" href="https://goo.gl/p4WKsR" rel="stylesheet" />
 	<script type="text/javascript">
         $(function () {
             $("#divScale").scalify({
@@ -184,7 +184,7 @@ You can update any of the above settings to customize it to your needs
 ```
 
 ### Look and Feel
-![Scalify](https://goo.gl/zClfja)
+![Scalify](https://goo.gl/pehmt6)
 
 ### Authors and Contributors
 Samuel Kola (@samuel-kola)
